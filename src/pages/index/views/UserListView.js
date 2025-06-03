@@ -1,4 +1,4 @@
-const UsersListView = Backbone.View.extend({
+const UserListView = Backbone.View.extend({
   tagName: 'ul',
   render: function() {
   this.collection.each(function(data) {

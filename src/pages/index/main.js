@@ -1,6 +1,6 @@
-const users = new UsersList(); 
-users.add({ name: "次郎", age: 28 });
-users.add({ name: "花子", age: 25 });
+const users = new UserList(); 
+users.add({ name: "次郎", age: 28 ,sex: "男"});
+users.add({ name: "花子", age: 25 ,sex: "女"});
 
-const usersListView = new UsersListView({ collection: users });
-$('body').append(usersListView.render().el);
+const userListView = new UserListView({ collection: users });
+$('body').append(userListView.render().el);
