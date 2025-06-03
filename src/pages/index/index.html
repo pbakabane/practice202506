@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>Backbone Sample</title>
+
+  <!-- CDN読み込み -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://underscorejs.org/underscore-min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/backbone@1.4.0/backbone-min.js"></script>
+
+  <!-- 各JSファイルを読み込み -->
+  <script src="../parts/CustomButtonView.js"></script>
+  <script src="models/User.js"></script>
+  <script src="collections/UserList.js"></script>
+  <script src="views/UserView.js"></script>
+  <script src="views/UserListView.js"></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <div id="app"></div>
+
+  <script type="text/template" id="user-template">
+    <%= name %>（性別：<%= sex %>）
+  </script>
+</body>
+</html>
